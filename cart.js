@@ -30,10 +30,22 @@ const cart = [
     {
         name: 'salad', 
         price: 7.99
-    }
-]
+    }];
+    
+     const summedPrice = cart.reduce((acc, curr) => (acc + curr));
 
+     const newSummedPrice = cart.reduce((a, c) => {a + c}, 10);
+
+     for (let total in cart) {
+        console.log(`${total}: ${cart[total]}`);
+    }
 //CODE HERE
+// const summedPrice = cart.reduce(function(acc, curr) {
+//     return acc + curr;
+// })
+
+// console.log(summedPrice);
+// console.log(newSummedPrice);
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
